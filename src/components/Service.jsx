@@ -2,8 +2,9 @@ import { useLocation } from "react-router-dom";
 
 import { useEffect } from "react";
 
-import ServiceBanner from "./Service/ServiceBanner";
-import ServiceAbout from "./Service/ServiceAbout";
+import BannerService from "./Service/Banner";
+import AboutService from "./Service/ServiceAbout";
+
 
 
 const Services = () => {
@@ -20,8 +21,8 @@ const Services = () => {
   }, [location]);
   return (
     <div className="bg-black text-white">
-      <ServiceBanner />
-      <ServiceAbout />
+      <BannerService />
+      <AboutService />
     </div>
   );
 };
