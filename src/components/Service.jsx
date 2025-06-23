@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 
 import { useEffect } from "react";
 
-import ServiceBanner from "./Service/ServiceAbout";
+import ServiceBanner from "./Service/ServiceBanner";
 import ServiceAbout from "./Service/ServiceAbout";
 
 
