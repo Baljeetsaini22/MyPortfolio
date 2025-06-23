@@ -1,8 +1,8 @@
 import { useLocation } from "react-router-dom";
 
 import { useEffect } from "react";
-import ServiceBanner from "./service/ServiceBanner";
-import ServiceAbout from "./service/ServiceBanner";
+import ServiceBanner from "./Service/ServiceBanner";
+import ServiceAbout from "./Service/ServiceBanner";
 
 const Services = () => {
   const location = useLocation();
