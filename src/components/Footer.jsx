@@ -41,10 +41,10 @@ const Footer = () => {
 
     emailjs
       .sendForm(
-        "service_clhsldf", 
-        "template_39y7ja8", 
+        "service_clhsldf",
+        "template_39y7ja8",
         form.current,
-        "EJcXy1gYGg9RDm5cb"
+        "D8yWhy2r676bIGDiV"
       )
       .then(
         (result) => {
