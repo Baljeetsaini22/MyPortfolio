@@ -4,7 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
   const location = useLocation();
-  
 
   const [showTopBtn, setShowTopBtn] = useState(false);
   useEffect(() => {
@@ -27,15 +26,12 @@ const Footer = () => {
         </button>
       )}
 
-      
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-       
         <div>
           <h2 className="text-2xl font-bold text-yellow-400">BS</h2>
           <p className="mt-2 text-gray-400">Frontend Developer Portfolio</p>
         </div>
 
-       
         <div>
           <h3 className="text-xl font-semibold text-yellow-400 mb-2">Menu</h3>
           <ul className="space-y-2">
@@ -103,10 +99,19 @@ const Footer = () => {
           <h3 className="text-xl font-semibold text-yellow-400 mb-2">
             Contact
           </h3>
-          <form className="space-y-3">
+          <form
+            className="space-y-3"
+            action="https://formsubmit.co/baljeetsaini7440@gmail.com"
+            method="POST"
+          >
             <input
               type="text"
               placeholder="Your Name"
+              name="name"
+              pattern="^[A-Za-z\s]+$"
+              onInput={(e) => {
+                e.target.value = e.target.value.replace(/[^A-Za-z\s]/g, "");
+              }}
               className="w-full p-2 rounded bg-gray-800 text-white placeholder-gray-400"
             />
             <input
