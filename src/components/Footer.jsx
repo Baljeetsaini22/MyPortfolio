@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
+import emailjs from "emailjs-com";
 
 const Footer = () => {
   const location = useLocation();
-
+  const form = useRef()
   const [showTopBtn, setShowTopBtn] = useState(false);
   useEffect(() => {
     const handleScroll = () => setShowTopBtn(window.scrollY > 100);
@@ -14,6 +15,29 @@ const Footer = () => {
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
+  // .sendForm("service_clhsldf", "template_39y7ja8", e.target, "EJcXy1gYGg9RDm5cb")
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_clhsldf",    // Replace with your EmailJS Service ID
+        "template_39y7ja8",   // Replace with your EmailJS Template ID
+        form.current,
+        "EJcXy1gYGg9RDm5cb"     // Replace with your EmailJS Public Key
+      )
+      .then(
+        (result) => {
+          console.log("Email sent:", result.text);
+          alert("Message sent successfully!");
+          e.target.reset(); // clear the form
+        },
+        (error) => {
+          console.error("Error:", error.text);
+          alert("Failed to send message. Try again later.");
+        }
+      );
+  };
   return (
     <footer className="bg-black text-white w-full h-auto px-[7.5%] py-16 mt-18relative">
       {showTopBtn && (
@@ -100,9 +124,9 @@ const Footer = () => {
             Contact
           </h3>
           <form
+          ref={form}
             className="space-y-3"
-            action="https://formsubmit.co/baljeetsaini7440@gmail.com"
-            method="POST"
+            onSubmit={sendEmail}
           >
             <input
               type="text"
@@ -116,11 +140,13 @@ const Footer = () => {
             />
             <input
               type="email"
+              name="email"
               placeholder="Email Address"
               className="w-full p-2 rounded bg-gray-800 text-white placeholder-gray-400"
             />
             <textarea
               rows="3"
+              name="message"
               placeholder="Your Message"
               className="w-full p-2 rounded bg-gray-800 text-white placeholder-gray-400"
             ></textarea>
