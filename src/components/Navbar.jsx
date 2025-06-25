@@ -16,7 +16,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="Baljeet Logo"
-            className="h-full w-full object-contain rounded-2xl"
+            className="h-full w-full object-contain rounded-4xl"
           />
         </div>
 
