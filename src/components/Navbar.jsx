@@ -1,19 +1,24 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+import logo from "/assets/logo/logo4.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
-  
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-black text-white fixed w-full top-0 z-50 shadow-md">
-      <div className="w-full p-[7.5%] flex items-center justify-between py-4 shadow-md shadow-yellow-400">
+    <nav className="h-[5rem] bg-black text-white fixed w-full top-0 z-50 shadow-md">
+      <div className="w-full px-[7.5%] flex items-center justify-between shadow-md shadow-yellow-400">
         {/* Left: Logo */}
-        <div className="text-2xl font-bold text-yellow-400">BS</div>
+        <div className="h-20 w-[120px] sm:w-[120px]">
+          <img
+            src={logo}
+            alt="Baljeet Logo"
+            className="h-full w-full object-contain"
+          />
+        </div>
 
         {/* Center: Menu (Desktop only) */}
         <ul className="hidden md:flex gap-8 text-white font-medium">
