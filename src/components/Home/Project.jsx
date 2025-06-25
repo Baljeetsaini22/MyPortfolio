@@ -58,13 +58,13 @@ const Projects = () => {
           <div
             key={project.id}
             onClick={() => window.open(project.link, "_blank")}
-            className="cursor-pointer bg-gray-900 overflow-hidden rounded-xl shadow-[0_-5px_5px_#fff] hover:shadow-[0_5px_5px_#fbc618] transform hover:scale-105 transition-all duration-300"
+            className="cursor-pointer bg-gray-900 overflow-hidden rounded-xl inset-shadow-[0_10px_10px_#fff] hover:inset-shadow-[0_-5px_5px_#fbc618] transform hover:scale-105 transition-all duration-300"
           >
             <img
               src={project.image}
               loading="lazy"
               alt={project.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-cover opacity-75 hover:opacity-100"
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold text-yellow-400">

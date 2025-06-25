@@ -29,7 +29,7 @@ const Skills = () => {
         {skills.map((skill) => (
           <div
             key={skill.id}
-            className="flex flex-col items-center justify-center bg-gray-900 p-6 rounded-xl  hover:scale-105 transition-transform duration-300 shadow-[0_-5px_5px_#fff,0_5px_5px_#fbc618] hover:shadow-[0_-5px_5px_#fbc618,0_5px_5px_#fff]"
+            className="flex flex-col items-center justify-center bg-gray-900 p-6 rounded-xl  hover:scale-105 transition-transform duration-300 inset-shadow-[0_5px_5px_#fff,0_-5px_5px_#fbc618] hover:inset-shadow-[0_5px_5px_#fbc618,0_-5px_5px_#fff]"
           >
             <div className="text-5xl mb-2">{skill.icon}</div>
             <p className="mt-2 text-lg font-semibold text-white">{skill.name}</p>

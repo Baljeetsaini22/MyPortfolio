@@ -1,4 +1,3 @@
-import { useTypewriter, Cursor } from "react-simple-typewriter";
 import {
   FaLinkedin,
   FaGithub,
@@ -10,16 +9,13 @@ import { FiArrowRight } from "react-icons/fi";
 import myimg from "/assets/image/myimg.jpg";
 import Resume from "/assets/resume/Resume.pdf";
 import { Link } from "react-router-dom";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 const Hero = () => {
-  
-
   const [text] = useTypewriter({
-    words: ["Baljeet Singh", "Frontend Web Developer"],
+    words: ["Baljeet Singh", "a Frontend Developer"],
     loop: true,
-    typeSpeed: 100,
-    deleteSpeed: 60,
-    delaySpeed: 1500,
+    delaySpeed: 2000,
   });
 
   return (
@@ -31,9 +27,9 @@ const Hero = () => {
         {/* Left Side */}
         <div>
           <p className="text-2xl md:text-3xl font-bold text-gray-300">Hello</p>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-white leading-tight mb-4">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-white leading-tight mb-4">
             I'm {text}
-            <Cursor cursorStyle="|" />
+            <Cursor cursorStyle="." cursorColor="#fac718" cursorBlinking={false} show={true} />
           </h1>
           <p className="text-gray-300 mb-6 text-justify">
             I craft modern, responsive, and high-performance websites using the

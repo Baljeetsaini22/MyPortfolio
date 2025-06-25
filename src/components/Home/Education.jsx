@@ -1,4 +1,3 @@
-
 const educationData = [
   {
     id: 1,
@@ -39,9 +38,8 @@ const Education = () => {
       </div>
 
       {/* Timeline Line (hidden on mobile, soft in background) */}
-      <div className="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-full bg-yellow-500 opacity-10 z-0"></div>
-
       <div className="relative z-10">
+        <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-10 h-full bg-yellow-400 opacity-100"></div>
         {educationData.map((edu) => (
           <div
             key={edu.id}
@@ -49,7 +47,7 @@ const Education = () => {
               edu.side === "left" ? "md:justify-start" : "md:justify-end"
             }`}
           >
-            <div className="w-full md:w-[70%] bg-gray-900 p-6 rounded-xl shadow-[0_-5px_5px_#fff] hover:shadow-[0_5px_5px_#fbc618] transform hover:scale-105 transition-all duration-300">
+            <div className="w-full md:w-[70%] bg-gray-900 p-6 rounded-xl inset-shadow-[0_5px_5px_#fff] hover:inset-shadow-[0_-5px_5px_#fbc618] transform hover:scale-105 transition-all duration-300 z-1">
               <h3 className="text-xl md:text-2xl font-semibold text-yellow-400">
                 {edu.title}
               </h3>
