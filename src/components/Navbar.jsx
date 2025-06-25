@@ -12,11 +12,11 @@ const Navbar = () => {
     <nav className="h-[5rem] bg-black text-white fixed w-full top-0 z-50 shadow-md">
       <div className="w-full px-[7.5%] flex items-center justify-between shadow-md shadow-yellow-400">
         {/* Left: Logo */}
-        <div className="h-[5rem] w-[80px] sm:w-[150px]">
+        <div className="flex items-center justify-center h-[4rem] w-[100px] overflow-hidden">
           <img
             src={logo}
             alt="Baljeet Logo"
-            className="h-full w-full object-contain rounded-sm"
+            className="h-[200px] w-auto object-contain rounded-full bg-clip-content"
           />
         </div>
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import logo from "/assets/logo/logo.png"
 
 const Footer = () => {
   const form = useRef();
@@ -71,7 +72,13 @@ const Footer = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         <div>
-          <h2 className="text-2xl font-bold text-yellow-400">BS</h2>
+          <div className="flex flex-col items-center justify-center h-[4rem] w-[100px]">
+            <img
+              src={logo}
+              alt="Baljeet Logo"
+              className="h-[200px] w-auto object-contain rounded-full bg-clip-content"
+            />
+          </div>
           <p className="mt-2 text-gray-400">Frontend Developer Portfolio</p>
         </div>
 
