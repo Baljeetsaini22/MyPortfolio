@@ -60,23 +60,33 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/services"
+              to="/Services"
               state={{ scrollTo: "services" }}
               className="hover:text-yellow-400"
             >
               Services
             </Link>
           </li>
+          <li>
+            <Link
+              to="/ContactMe"
+              state={{ scrollTo: "contact" }}
+              className="hover:text-yellow-400"
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
 
         {/* Right: Let's Talk + Hamburger (mobile) */}
         <div className="flex items-center gap-4">
-          <a
-            href="#contact"
-            className="sm:inline-block bg-yellow-400 text-black px-2 md:px-4 py-1 md:py-2 rounded-md font-semibold hover:bg-yellow-300 transition"
+          <Link
+            to="/"
+            state={{ scrollTo: "contact" }}
+            className="bg-yellow-400 text-black px-2 md:px-4 py-1 md:py-2 rounded-md font-semibold hover:bg-yellow-300 transition"
           >
             Let's Talk
-          </a>
+          </Link>
           <button
             onClick={toggleMenu}
             className="md:hidden text-yellow-400 focus:outline-none"
