@@ -1,7 +1,5 @@
 import { useLocation } from "react-router-dom";
-
 import { useEffect } from "react";
-
 import BannerService from "./Banner";
 import AboutService from "./ServiceAbout";
 

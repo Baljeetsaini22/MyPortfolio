@@ -9,14 +9,14 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="h-[5rem] bg-black text-white fixed w-full top-0 z-50 shadow-md">
+    <nav className="h-[4rem] md:h-[5rem] bg-black text-white fixed w-full top-0 z-50 shadow-md">
       <div className="w-full px-[7.5%] flex items-center justify-between shadow-md shadow-yellow-400">
         {/* Left: Logo */}
-        <div className="flex items-center justify-center h-[4rem] w-[100px] overflow-hidden">
+        <div className="flex items-center justify-center h-[3rem] md:h-[4rem] w-[50px] md:w-[100px] overflow-hidden">
           <img
             src={logo}
             alt="Baljeet Logo"
-            className="h-[200px] w-auto object-contain rounded-full bg-clip-content"
+            className="h-[100px] sm:h-[200px] w-auto object-contain rounded-full bg-clip-content"
           />
         </div>
 
@@ -73,7 +73,7 @@ const Navbar = () => {
         <div className="flex items-center gap-4">
           <a
             href="#contact"
-            className="sm:inline-block bg-yellow-400 text-black px-4 py-2 rounded-md font-semibold hover:bg-yellow-300 transition"
+            className="sm:inline-block bg-yellow-400 text-black px-2 md:px-4 py-1 md:py-2 rounded-md font-semibold hover:bg-yellow-300 transition"
           >
             Let's Talk
           </a>

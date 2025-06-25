@@ -25,7 +25,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="w-full h-auto px-[7.5%] py-16 mt-18 flex items-center"
+      className="w-full h-auto px-[7.5%] py-16 sm:mt-[5rem] mt-[4rem] flex items-center"
     >
       <div className="grid md:grid-cols-2 gap-12 items-center ">
         {/* Left Side */}
