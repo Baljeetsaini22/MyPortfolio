@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "/assets/logo/logo4.png";
+import logo from "/assets/logo/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="h-[5rem] bg-black text-white fixed w-full top-0 z-50 shadow-md">
       <div className="w-full px-[7.5%] flex items-center justify-between shadow-md shadow-yellow-400">
         {/* Left: Logo */}
-        <div className="h-20 w-[120px] sm:w-[120px]">
+        <div className="h-[5rem] w-[80px] sm:w-[150px]">
           <img
             src={logo}
             alt="Baljeet Logo"
