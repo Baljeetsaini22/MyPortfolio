@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import ContactBanner from "./ContactBanner";
 import FormContact from "./FormContact";
 import { useEffect } from "react";
+import Experience from "./Experience";
 
 const ContactMe = () => {
       const location = useLocation();
@@ -20,6 +21,7 @@ const ContactMe = () => {
     <div className="bg-black text-white">
         <ContactBanner />
         <FormContact />
+        {/* <Experience /> */}
     </div>
   )
 }

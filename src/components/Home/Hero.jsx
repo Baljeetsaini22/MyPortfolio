@@ -5,8 +5,8 @@ import {
   FaFacebook,
   FaTwitter,
 } from "react-icons/fa";
-import { FiArrowRight } from "react-icons/fi";
-import myimg from "/assets/image/myimg.jpg";
+import { FiArrowUpRight } from "react-icons/fi";
+import myimg from "/assets/image/img.png";
 import Resume from "/assets/resume/Resume.pdf";
 import { Link } from "react-router-dom";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
@@ -21,15 +21,20 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="w-full h-auto px-[7.5%] py-16 sm:mt-[5rem] mt-[4rem] flex items-center"
+      className="w-full h-auto px-[7.5%] py-16 md:mt-[5rem] mt-[4rem] flex items-center"
     >
-      <div className="grid md:grid-cols-2 gap-12 items-center ">
+      <div className="grid md:grid-cols-2 gap-12 items-center rounded-l-2xl ">
         {/* Left Side */}
-        <div>
+        <div className="pl-5">
           <p className="text-2xl md:text-3xl font-bold text-gray-300">Hello</p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-white leading-tight mb-4">
             I'm {text}
-            <Cursor cursorStyle="." cursorColor="#fac718" cursorBlinking={false} show={true} />
+            <Cursor
+              cursorStyle="."
+              cursorColor="#fac718"
+              cursorBlinking={false}
+              show={true}
+            />
           </h1>
           <p className="text-gray-300 mb-6 text-justify">
             I craft modern, responsive, and high-performance websites using the
@@ -43,16 +48,16 @@ const Hero = () => {
               state={{ scrollTo: "contact" }}
               className="inline-flex items-center gap-2 bg-yellow-400 text-black px-5 py-2 rounded-md font-medium hover:bg-yellow-300 transition"
             >
-              Hire Me <FiArrowRight />
+              Hire Me <FiArrowUpRight />
             </Link>
 
             <Link
               to={Resume}
               target="_blank"
               // download
-              className="bg-transparent border border-yellow-400 px-5 py-2 rounded-md hover:bg-yellow-400 hover:text-black transition font-medium"
+              className="inline-flex items-center gap-2 border border-yellow-400 px-5 py-2 rounded-md hover:bg-yellow-400 hover:text-black transition font-medium"
             >
-              Download CV
+              Download CV <FiArrowUpRight />
             </Link>
           </div>
 
@@ -97,13 +102,14 @@ const Hero = () => {
         </div>
 
         {/* Right Side Image */}
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-center md:justify-end relative ">
           <img
             src={myimg}
             alt="Baljeet Singh"
             loading="lazy"
-            className="w-[300px] md:w-[400px] rounded-2xl shadow-xl"
+            className="w-[400px] md:w-[350px] rounded-2xl inset-shadow-[10px_0_#fdc700,0_-20px_#fff,-10px_0_#fdc700] hover:inset-shadow-[10px_0_#fff,0_-20px_#fdc700,-10px_0_#fff]"
           />
+
         </div>
       </div>
     </section>

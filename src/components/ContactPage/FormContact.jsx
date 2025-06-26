@@ -59,24 +59,26 @@ const FormContact = () => {
       <div className="flex flex-col md:flex-row gap-12 items-start">
         {/* Left Side */}
         <div className="md:w-1/2 space-y-6">
-          <h2 className="text-4xl text-yellow-400 font-bold">Let's Work Together</h2>
+          <h2 className="text-4xl text-yellow-400 font-bold">
+            Let's Work Together
+          </h2>
 
           <div>
             <p className="text-gray-500 mb-1">My office:</p>
             <p className="font-semibold text-lg">Zirakpur, Mohali</p>
-            <hr className="my-4 border-gray-300" />
+            <hr className="my-4 border-yellow-400" />
           </div>
 
           <div>
             <p className="text-gray-500 mb-1">Call me:</p>
             <p className="font-semibold text-lg">+91 97280 67440</p>
-            <hr className="my-4 border-gray-300" />
+            <hr className="my-4 border-yellow-400" />
           </div>
 
           <div>
             <p className="text-gray-500 mb-1">Mail me:</p>
             <p className="font-semibold text-lg">baljeetsaini7440@gmail.com</p>
-            <hr className="my-4 border-gray-300" />
+            <hr className="my-4 border-yellow-400" />
           </div>
 
           <div>
@@ -124,8 +126,8 @@ const FormContact = () => {
         {/* Right Side Form */}
         <div className="md:w-1/2 w-full space-y-4">
           <p className="text-gray-500">
-            The contact form is currently inactive. You can enable it with your
-            preferred form service or backend.
+            Ready to get started? Feel free to reach out through the contact
+            form, and let's embark on a journey of innovation and success.
           </p>
 
           {submitted ? (
@@ -140,7 +142,7 @@ const FormContact = () => {
                   name="name"
                   placeholder="Your Name"
                   required
-                  className="w-full p-2 bg-gray-800 text-white rounded"
+                  className="w-full p-2 bg-gray-800 focus:outline-none focus:border focus:border-yellow-400 text-white rounded"
                   onInput={(e) =>
                     (e.target.value = e.target.value.replace(
                       /[^A-Za-z\s]/g,
@@ -153,7 +155,7 @@ const FormContact = () => {
                   name="email"
                   placeholder="Your Email"
                   required
-                  className="w-full p-2 bg-gray-800 text-white rounded"
+                  className="w-full p-2 bg-gray-800 focus:outline-none focus:border focus:border-yellow-400 text-white rounded"
                 />
                 {emailError && (
                   <p className="text-red-500 text-sm">{emailError}</p>
@@ -163,14 +165,14 @@ const FormContact = () => {
                 type="text"
                 name="subject"
                 placeholder="Subject"
-                className="w-full p-3 border border-gray-300 rounded"
+                className="w-full p-3 bg-gray-800 focus:outline-none focus:border focus:border-yellow-400 text-white rounded"
               />
               <textarea
                 name="message"
                 rows="4"
                 placeholder="Your Message"
                 required
-                className="w-full p-2 bg-gray-800 text-white rounded"
+                className="w-full p-2 bg-gray-800 focus:outline-none focus:border focus:border-yellow-400 text-white rounded"
               ></textarea>
               <button
                 type="submit"
