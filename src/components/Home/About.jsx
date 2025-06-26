@@ -12,12 +12,6 @@ const About = () => {
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div>
-          <p className="mb-6 text-gray-300 text-base md:text-md lg:text-lg xl:text-xl text-justify">
-            I’m a dedicated Frontend Developer with hands-on experience in
-            building responsive websites using HTML, CSS, and JavaScript. I
-            focus on writing clean code, creating user-friendly interfaces, and
-            ensuring websites work smoothly across all devices and browsers.
-          </p>
           <ul className="space-y-4 text-base text-[0.78rem] md:text-xs lg:text-md xl:text-lg">
             <li className="flex items-center gap-5 sm:gap-10">
               <span className="w-12 sm:w-14 md:w-18  text-yellow-400 font-semibold">
@@ -73,6 +67,9 @@ const About = () => {
             className="w-64 md:w-80 rounded-2xl shadow-xl object-cover animate-pulse"
           />
         </div>
+        {/* <div className="absolute h-[20vh] w-4 bg-yellow-400 right-68 z-0"></div>
+          <div className="absolute h-4 w-80 bg-yellow-400 right-30 -bottom-200 z-0 rounded-t-4xl"></div> */}
+        {/* </div> */}
       </div>
     </section>
   );

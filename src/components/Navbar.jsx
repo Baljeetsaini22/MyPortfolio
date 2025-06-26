@@ -21,7 +21,7 @@ const Navbar = () => {
         </div>
 
         {/* Center: Menu (Desktop only) */}
-        <ul className="hidden md:flex gap-8 text-white font-medium">
+        <ul className="hidden md:flex gap-5 lg:gap-8 text-white font-medium">
           <li>
             <Link
               to="/"
@@ -151,7 +151,7 @@ const Navbar = () => {
             >
               Services
             </Link>
-          </li>
+          </li>z
         </ul>
       </div>
     </nav>
