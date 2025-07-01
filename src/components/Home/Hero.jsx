@@ -25,7 +25,7 @@ const Hero = () => {
     >
       <div className="grid md:grid-cols-2 gap-12 items-center rounded-l-2xl ">
         {/* Left Side */}
-        <div className="pl-5">
+        <div className="animate-fade-right md:animate-fade-up">
           <p className="text-2xl md:text-3xl font-bold text-gray-300">Hello</p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-white leading-tight mb-4">
             I'm {text}
@@ -102,14 +102,13 @@ const Hero = () => {
         </div>
 
         {/* Right Side Image */}
-        <div className="flex justify-center md:justify-end relative ">
+        <div className="flex justify-center md:justify-end relative animate-fade-left md:animate-fade-up animate-delay-500">
           <img
             src={myimg}
             alt="Baljeet Singh"
             loading="lazy"
             className="w-[400px] md:w-[350px] rounded-2xl inset-shadow-[10px_0_#fdc700,0_-20px_#fff,-10px_0_#fdc700] hover:inset-shadow-[10px_0_#fff,0_-20px_#fdc700,-10px_0_#fff]"
           />
-
         </div>
       </div>
     </section>
