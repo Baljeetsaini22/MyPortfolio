@@ -151,7 +151,16 @@ const Navbar = () => {
             >
               Services
             </Link>
-          </li>z
+          </li>
+          <li>
+            <Link
+              to="/ContactMe"
+              state={{ scrollTo: "contact" }}
+              className="hover:text-yellow-400"
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
