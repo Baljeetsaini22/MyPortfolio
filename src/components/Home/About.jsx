@@ -59,7 +59,7 @@ const About = () => {
         </div>
 
         {/* Right Image */}
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-center md:justify-end animate-fade-left">
           <img
             src={myImg}
             alt="Baljeet Singh"
