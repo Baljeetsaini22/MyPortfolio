@@ -1,4 +1,4 @@
-import myImg from "/assets/image/myimg.jpg";
+import myImg from "/assets/image/myimg.png";
 
 const About = () => {
   return (
@@ -18,42 +18,42 @@ const About = () => {
                 Name
               </span>
               <span>:</span>
-              <span>Baljeet Singh</span>
+              <span className="animate-fade-right">Baljeet Singh</span>
             </li>
             <li className="flex items-center gap-5 sm:gap-10">
               <span className="w-12 sm:w-14 md:w-18  text-yellow-400 font-semibold">
                 Address
               </span>
               <span>:</span>
-              <span>Zirakpur, Mohali, India</span>
+              <span className="animate-fade-right">Zirakpur, Mohali, India</span>
             </li>
             <li className="flex items-center gap-5 sm:gap-10">
               <span className="w-12 sm:w-14 md:w-18  text-yellow-400 font-semibold">
                 Phone
               </span>
               <span>:</span>
-              <span>+91 97280 67440</span>
+              <span className="animate-fade-right">+91 97280 67440</span>
             </li>
             <li className="flex items-center gap-5 sm:gap-10">
               <span className="w-12 sm:w-14 md:w-18  text-yellow-400 font-semibold">
                 Email ID
               </span>
               <span>:</span>
-              <span>Baljeetsaini7440@gmail.com</span>
+              <span className="animate-fade-right">Baljeetsaini7440@gmail.com</span>
             </li>
             <li className="flex items-center gap-5 sm:gap-10">
               <span className="w-12 sm:w-14 md:w-18  text-yellow-400 font-semibold">
                 Nationality
               </span>
               <span>:</span>
-              <span>Indian</span>
+              <span className="animate-fade-right">Indian</span>
             </li>
             <li className="flex items-center gap-5 sm:gap-10">
               <span className="w-12 sm:w-14 md:w-18  text-yellow-400 font-semibold">
                 Languages
               </span>
               <span>:</span>
-              <span>English, Hindi, Punjabi</span>
+              <span className="animate-fade-right">English, Hindi, Punjabi</span>
             </li>
           </ul>
         </div>
