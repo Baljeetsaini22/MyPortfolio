@@ -6,6 +6,6 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
-    historyApiFallback: true, // tell Vite to serve index.html on refresh
+    historyApiFallback: true, 
   },
 });
