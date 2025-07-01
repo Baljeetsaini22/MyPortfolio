@@ -3,13 +3,13 @@ import myImg from "/assets/image/myimg.png";
 const About = () => {
   return (
     <section id="about" className="w-full h-auto px-[7.5%] py-16">
-      <div className="text-center mb-6">
+      <div className="text-center mb-6 animate-fade-down">
         <h2 className="text-3xl md:text-4xl font-bold text-yellow-400">
           About Me
         </h2>
         <p className="mt-4 text-gray-300">Professional Web Developer</p>
       </div>
-      <div className=" grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div className=" grid grid-cols-1 md:grid-cols-2 gap-10 items-center animate-fade-right">
         {/* Left Content */}
         <div>
           <ul className="space-y-4 text-base text-[0.78rem] md:text-xs lg:text-md xl:text-lg">
@@ -59,7 +59,7 @@ const About = () => {
         </div>
 
         {/* Right Image */}
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-center md:justify-end animate-fade-left">
           <img
             src={myImg}
             alt="Baljeet Singh"
