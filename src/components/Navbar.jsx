@@ -43,15 +43,6 @@ const Navbar = () => {
           <li>
             <Link
               to="/"
-              state={{ scrollTo: "skills" }}
-              className="hover:text-yellow-400"
-            >
-              Skills
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/"
               state={{ scrollTo: "projects" }}
               className="hover:text-yellow-400"
             >
@@ -69,7 +60,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/ContactMe"
+              to="/"
               state={{ scrollTo: "contact" }}
               className="hover:text-yellow-400"
             >
@@ -121,16 +112,6 @@ const Navbar = () => {
               className="hover:text-yellow-400"
             >
               About
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={toggleMenu}
-              to="/"
-              state={{ scrollTo: "skills" }}
-              className="hover:text-yellow-400"
-            >
-              Skills
             </Link>
           </li>
           <li>
