@@ -1,111 +1,74 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import {
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaPaperPlane,
+  FaGlobe,
+} from "react-icons/fa";
+import { FiArrowUpRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
-  const form = useRef();
-  const [statusMessage, setStatusMessage] = useState("");
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-    
-
-    console.log("Sending Form Data:", {
-      name: form.current.name.value,
-      email: form.current.email.value,
-      subject: form.current.subject.value,
-      message: form.current.message.value,
-    });
-
-    emailjs
-      .sendForm(
-        "service_clhsldf",
-        "template_5nc0s27",
-        form.current,
-        "D8yWhy2r676bIGDiV"
-      )
-      .then(
-        () => {
-          setStatusMessage("✅ Thank you! Your meeting request was sent.");
-          form.current.reset();
-          setTimeout(() => setStatusMessage(""), 5000);
-        },
-        (error) => {
-          console.error("FAILED...", error.text);
-          setStatusMessage("❌ Failed to send. Please try again.");
-        }
-      );
-  };
-
   return (
-    <section id="meeting" className="w-full h-auto px-[7.5%] py-16">
-      <div className="grid md:grid-cols-2 gap-12 items-center">
-        {/* Left Side Info */}
-        <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-4">
-            Schedule a Meeting
-          </h2>
-          <p className="text-gray-300 mb-6">
-            Let’s connect and discuss your ideas, projects, or opportunities.
-            Fill out the form and I’ll get back to you as soon as possible.
+    <section id="contact" className="w-full h-auto px-[7.5%] py-16">
+      {/* Section Heading */}
+      <div className="text-center mb-6 animate-fade-down">
+        <h2 className="text-3xl md:text-4xl font-bold mb-2">Contact Me</h2>
+        <p className="text-gray-400 mb-12 max-w-xl mx-auto">
+          I’m always open to discussing new projects, creative ideas, or
+          opportunities to collaborate. Reach out using the details below and
+          let’s connect!
+        </p>
+      </div>
+
+      {/* Contact Info Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center items-center">
+        {/* Address */}
+        <div className="flex flex-col items-center">
+          <div className="bg-gray-900 w-16 h-16 flex items-center justify-center rounded-full mb-4">
+            <FaMapMarkerAlt className="text-yellow-400 text-2xl" />
+          </div>
+          <h4 className="font-semibold mb-2">ADDRESS</h4>
+          <p className="text-gray-400 text-sm">
+            Zirakpur, Mohali <br />
+            Punjab, 140603
           </p>
-          <ul className="space-y-2 text-gray-400">
-            <li>
-              <strong>Email:</strong> Baljeetsaini7440@gmail.com
-            </li>
-            <li>
-              <strong>Phone:</strong> +91 97280 67440
-            </li>
-            <li>
-              <strong>Location:</strong> Zirakpur, Mohali, India
-            </li>
-          </ul>
         </div>
 
-        {/* Right Side Form */}
-        <div>
-          <form ref={form} onSubmit={sendEmail} className="space-y-4">
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              required
-              className="w-full p-2 bg-gray-800 text-white rounded"
-              onInput={(e) =>
-                (e.target.value = e.target.value.replace(/[^A-Za-z\s]/g, ""))
-              }
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-              className="w-full p-2 bg-gray-800 text-white rounded"
-            />
-            <input
-              type="text"
-              name="subject"
-              required
-              placeholder="Meeting Subject"
-              className="w-full p-3 rounded-md bg-gray-800 text-white placeholder-gray-400"
-            />
-            <textarea
-              name="message"
-              rows="4"
-              placeholder="Message or Agenda"
-              required
-              className="w-full p-3 rounded-md bg-gray-800 text-white placeholder-gray-400"
-            ></textarea>
-            <button
-              type="submit"
-              className="bg-yellow-400 text-black px-6 py-3 rounded-md font-medium hover:bg-yellow-300 transition"
-            >
-              Request Meeting
-            </button>
-            {statusMessage && (
-              <p className="text-sm text-center mt-2">{statusMessage}</p>
-            )}
-          </form>
+        {/* Phone */}
+        <div className="flex flex-col items-center">
+          <div className="bg-gray-900 w-16 h-16 flex items-center justify-center rounded-full mb-4">
+            <FaPhoneAlt className="text-yellow-400 text-2xl" />
+          </div>
+          <h4 className="font-semibold mb-2">CONTACT NUMBER</h4>
+          <p className="text-gray-400 text-sm">+91 97280 67440</p>
         </div>
+
+        {/* Email */}
+        <div className="flex flex-col items-center">
+          <div className="bg-gray-900 w-16 h-16 flex items-center justify-center rounded-full mb-4">
+            <FaPaperPlane className="text-yellow-400 text-2xl" />
+          </div>
+          <h4 className="font-semibold mb-2">EMAIL ADDRESS</h4>
+          <p className="text-gray-400 text-sm">baljeetsaini7440@gmail.com</p>
+        </div>
+
+        {/* Website */}
+        {/* <div className="flex flex-col items-center">
+          <div className="bg-gray-900 w-16 h-16 flex items-center justify-center rounded-full mb-4">
+            <FaGlobe className="text-yellow-400 text-2xl" />
+          </div>
+          <h4 className="font-semibold mb-2">WEBSITE</h4>
+          <p className="text-gray-400 text-sm">yoursite.com</p>
+        </div> */}
+      </div>
+      <div className="text-center mt-10">
+        <Link
+          to="/ContactMe"
+          state={{ scrollTo: "contact" }}
+          className="inline-flex items-center gap-2 bg-yellow-400 text-black px-5 py-2 rounded-md font-medium hover:bg-yellow-300 transition"
+        >
+          Hire Me <FiArrowUpRight />
+        </Link>
       </div>
     </section>
   );
