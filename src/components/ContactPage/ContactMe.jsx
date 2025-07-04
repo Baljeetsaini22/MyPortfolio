@@ -21,7 +21,7 @@ const ContactMe = () => {
     <div className="bg-black text-white">
         <ContactBanner />
         <FormContact />
-        <Experience />
+        {/* <Experience /> */}
     </div>
   )
 }

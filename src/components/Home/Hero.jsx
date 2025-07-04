@@ -13,7 +13,7 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   const [text] = useTypewriter({
-    words: ["Baljeet Singh", "a Frontend Developer"],
+    words: ["Baljeet Singh", "a Frontend Developer", "a Web Designer"],
     loop: true,
     delaySpeed: 2000,
   });

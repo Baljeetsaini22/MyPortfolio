@@ -56,10 +56,9 @@ const AboutService = () => {
         </p>
       </div>
 
-      {/* Services Grid */}
-      <div className="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-full bg-yellow-500 opacity-10 z-0"></div>
-
+    
       <div className="relative z-10">
+         <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-10 h-full bg-yellow-400 -z-1"></div>
         {services.map((service) => (
           <div
             key={service.id}
@@ -67,7 +66,7 @@ const AboutService = () => {
               service.side === "left" ? "md:justify-start" : "md:justify-end"
             }`}
           >
-            <div className="w-full md:w-[70%] bg-gray-900 px-6 py-15 rounded-xl shadow-[0_-5px_5px_#fff] hover:shadow-[0_5px_5px_#fbc618] transform hover:scale-105 transition-all duration-300">
+            <div className="w-full md:w-[70%] bg-gray-900 px-6 py-15 rounded-xl inset-shadow-[0_5px_5px_#fff] hover:inset-shadow-[0_-5px_5px_#fbc618] transform hover:scale-105 transition-all duration-300">
               <h3 className="text-xl font-semibold text-yellow-400 mb-3">
                 {service.title}
               </h3>

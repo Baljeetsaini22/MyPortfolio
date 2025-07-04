@@ -28,7 +28,9 @@ const Experience = () => {
   return (
     <section className=" py-16 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16">Working Experience</h2>
+        <h2 className="text-4xl font-bold text-center mb-16">
+          Working Experience
+        </h2>
         <div className="relative">
           {/* Vertical line */}
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 h-full border-l-2 border-yellow-400"></div>
@@ -47,15 +49,23 @@ const Experience = () => {
                   index % 2 === 0 ? "md:mr-auto md:ml-0" : "md:ml-auto md:mr-0"
                 }`}
               >
-                <h3 className="text-xl text-yellow-400 font-semibold">{exp.title}</h3>
+                <h3 className="text-xl text-yellow-400 font-semibold">
+                  {exp.title}
+                </h3>
                 <p className="text-gray-500 italic">{exp.company}</p>
                 <p className="text-gray-700 mt-2">{exp.description}</p>
               </div>
+              <div
+                className={`absolute text-yellow-400 font-semibold ${
+                  index % 2 == !0 ? "md:ml-auto md:mr-0" : "md:mr-auto md:ml-0"
+                }`}
+              >
+                <p>{exp.duration}</p>
+              </div>
 
               {/* Circle & Date */}
-              <div className="absolute flex flex-col items-center left-1/2 transform -translate-x-1/2 text-center">
+              <div className="absolute flex flex-col items-center left-1/2 transform -translate-x-1/2 ">
                 <div className="w-4 h-4 border-4 border-yellow-400 rounded-full mb-2"></div>
-                <span className="text-yellow-400 font-semibold">{exp.duration}</span>
               </div>
             </div>
           ))}
@@ -66,3 +76,4 @@ const Experience = () => {
 };
 
 export default Experience;
+
