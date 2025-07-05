@@ -64,10 +64,10 @@ const Contact = () => {
       <div className="text-center mt-10">
         <Link
           to="/ContactMe"
-          state={{ scrollTo: "contact" }}
+          state={{ scrollTo: "banner" }}
           className="inline-flex items-center gap-2 bg-yellow-400 text-black px-5 py-2 rounded-md font-medium hover:bg-yellow-300 transition"
         >
-          Hire Me <FiArrowUpRight />
+          Let's Talk <FiArrowUpRight />
         </Link>
       </div>
     </section>

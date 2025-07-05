@@ -10,6 +10,8 @@ import {
 import { Link } from "react-router-dom";
 
 const FormContact = () => {
+  
+
   const form = useRef();
   const [submitted, setSubmitted] = useState(false);
   const [emailError, setEmailError] = useState("");
@@ -55,7 +57,7 @@ const FormContact = () => {
       );
   };
   return (
-    <section className="w-full px-[7.5%] py-16">
+    <section id="contact" className="w-full px-[7.5%] py-16">
       <div className="flex flex-col md:flex-row gap-12 items-start">
         {/* Left Side */}
         <div className="md:w-1/2 space-y-6">

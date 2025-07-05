@@ -3,9 +3,10 @@ import myimg from "/assets/image/image.png";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const ContactBanner = () => {
+  
   return (
     <section
-      id="contact"
+      id="banner"
       className="w-full h-full px-[7.5%] py-12 mt-[4rem] md:mt-[5rem]"
     >
       <div className="grid md:grid-cols-2 gap-12 items-center ">

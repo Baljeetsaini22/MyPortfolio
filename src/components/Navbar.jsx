@@ -1,12 +1,27 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "/assets/logo/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleLetsTalk = () => {
+    if (location.pathname === "/") {
+      
+      const contactSection = document.getElementById("contact");
+      contactSection?.scrollIntoView({ behavior: "smooth" });
+    } else {
+
+      navigate("/ContactMe");
+      const contactSection = document.getElementById("contact");
+      contactSection?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <nav className="h-[4rem] md:h-[5rem] bg-black text-white fixed w-full top-0 z-50 shadow-md">
@@ -71,13 +86,12 @@ const Navbar = () => {
 
         {/* Right: Let's Talk + Hamburger (mobile) */}
         <div className="flex items-center gap-4">
-          <Link
-            to="/"
-            state={{ scrollTo: "contact" }}
+          <button
+            onClick={handleLetsTalk}
             className="bg-yellow-400 text-black px-2 md:px-4 py-1 md:py-2 rounded-md font-semibold hover:bg-yellow-300 transition"
           >
             Let's Talk
-          </Link>
+          </button>
           <button
             onClick={toggleMenu}
             className="md:hidden text-yellow-400 focus:outline-none"
