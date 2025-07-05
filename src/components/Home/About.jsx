@@ -113,40 +113,40 @@ const About = () => {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4 text-sm">
-            <div className="space-y-2">
+            <div className="space-y-4">
               <p>
                 <span className="text-yellow-400 mr-2">➤</span>
-                <strong>Name:</strong> Baljeet Singh
+                <strong>Name :</strong> Baljeet Singh
               </p>
               <p>
                 <span className="text-yellow-400 mr-2">➤</span>
-                <strong>Birthday:</strong> 20 Nov 1999
+                <strong>Birthday :</strong> 20 Nov 1999
               </p>
               <p>
                 <span className="text-yellow-400 mr-2">➤</span>
-                <strong>Phone:</strong> +91 97280 67440
+                <strong>Phone :</strong> +91 97280 67440
               </p>
               <p>
                 <span className="text-yellow-400 mr-2">➤</span>
-                <strong>Email:</strong> Baljeetsaini7440@gmail.com
+                <strong>Email :</strong> Baljeetsaini7440@gmail.com
               </p>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-4">
               <p>
                 <span className="text-yellow-400 mr-2">➤</span>
-                <strong>Degree:</strong> Bachelor
+                <strong>Degree :</strong> Bachelor
               </p>
               <p>
                 <span className="text-yellow-400 mr-2">➤</span>
-                <strong>City:</strong> Zirakpur, SAS Nagar, Punjab
+                <strong>City :</strong> Zirakpur, SAS Nagar, Punjab
               </p>
               <p>
                 <span className="text-yellow-400 mr-2">➤</span>
-                <strong>Languages:</strong> Hindi, English, Punjabi
+                <strong>Languages :</strong> Hindi, English, Punjabi
               </p>
               <p>
                 <span className="text-yellow-400 mr-2">➤</span>
-                <strong>Freelance:</strong> Available
+                <strong>Freelance :</strong> Available
               </p>
             </div>
           </div>
