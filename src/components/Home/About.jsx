@@ -1,4 +1,4 @@
-import myImg from "/assets/image/myimg.png";
+// import myImg from "/assets/image/myimg.png";
 
 // const About = () => {
 //   return (
@@ -95,8 +95,8 @@ const About = () => {
         {/* left 30% */}
         <div className="w-full lg:w-[30%] mb-8 md:mb-0 flex justify-center">
           <img
-            src={myImg}
-            alt="about me"
+            src="{myImg}"
+            alt="Baljeet Singh"
             className="rounded-md w-50 object-cover rotate-y-180"
           />
         </div>
