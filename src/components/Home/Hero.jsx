@@ -6,7 +6,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { FiArrowUpRight } from "react-icons/fi";
-import myimg from "/assets/image/img.png";
+// import myimg from "/assets/image/img.png";
 import Resume from "/assets/resume/Resume.pdf";
 import { Link } from "react-router-dom";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
@@ -104,7 +104,7 @@ const Hero = () => {
         {/* Right Side Image */}
         <div className="flex justify-center md:justify-end relative animate-fade-left md:animate-fade-up animate-delay-500">
           <img
-            src={myimg}
+            src="{myimg}"
             alt="Baljeet Singh"
             loading="lazy"
             className="w-[400px] md:w-[350px] rounded-2xl inset-shadow-[10px_0_#fdc700,0_-20px_#fff,-10px_0_#fdc700] hover:inset-shadow-[10px_0_#fff,0_-20px_#fdc700,-10px_0_#fff]"
