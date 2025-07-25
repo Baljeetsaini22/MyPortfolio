@@ -34,7 +34,7 @@ const projects = [
   {
     id: 6,
     title: "Weather App",
-    image: "",
+    image: "/assets/projects/weather.png",
     link: "https://baljeetsaini22.github.io/weather/",
   },
   {

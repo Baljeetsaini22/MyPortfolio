@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-// import myimg from "/assets/image/image.png";
+import myimg from "/assets/image/image.png";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const ContactBanner = () => {
@@ -61,7 +61,7 @@ const ContactBanner = () => {
         </div>
         <div className="flex justify-center md:justify-end">
           <img
-            src="{myimg}"
+            src={myimg}
             alt="Baljeet Singh"
             loading="lazy"
             className="w-[400px] md:w-[350px] rounded-2xl inset-shadow-[0_-10px_50px] inset-shadow-yellow-400
