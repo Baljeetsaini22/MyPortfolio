@@ -103,11 +103,17 @@ const Hero = () => {
 
         {/* Right Side Image */}
         <div className="flex justify-center md:justify-end relative animate-fade-left md:animate-fade-up animate-delay-500">
-          <img
+          {/* <img
             src={myimg}
             alt="Baljeet Singh"
             loading="lazy"
             className="w-[400px] md:w-[350px] rounded-2xl inset-shadow-[10px_0_#fdc700,0_-20px_#fff,-10px_0_#fdc700] hover:inset-shadow-[10px_0_#fff,0_-20px_#fdc700,-10px_0_#fff]"
+          /> */}
+          <img
+            src={myimg}
+            alt="Baljeet Singh"
+            loading="lazy"
+            className="w-[400px] md:w-[350px] rounded-2xl inset-shadow-[0_-10px_50px] inset-shadow-yellow-400"
           />
         </div>
       </div>
