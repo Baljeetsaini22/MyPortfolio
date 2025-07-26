@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
 import myimg from "/assets/image/image.png";
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+} from "react-icons/fa";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const ContactBanner = () => {
-  
+
   return (
     <section
       id="banner"
@@ -21,7 +28,7 @@ const ContactBanner = () => {
             and enjoy working with clients who value clean design and smart
             code. Let’s connect and bring your ideas to life.
           </p>
-              <div className="flex gap-5 mt-4 text-2xl text-yellow-400">
+          <div className="flex gap-5 mt-4 text-2xl text-yellow-400">
             <Link
               to="https://www.linkedin.com/in/baljeet-singh-13590834b/"
               target="_blank"
