@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import myimg from "/assets/image/image.png";
 import {
   FaFacebook,
@@ -10,6 +10,7 @@ import {
 import { FiArrowUpRight } from "react-icons/fi";
 
 const BannerService = () => {
+  const navigate = useNavigate();
   return (
     <section
       id="services"
@@ -31,13 +32,14 @@ const BannerService = () => {
 
           {/* Contact Button */}
           <div className="mt-8">
-            <Link
-              to="/"
+            <button onClick={() => navigate("/ContactMe")} className="inline-flex items-center gap-2 bg-yellow-400 text-black px-5 py-2 rounded-md font-medium hover:bg-yellow-300 transition"> Hire Me <FiArrowUpRight /></button>
+            {/* <Link
+              to="./ContactPage/ContactMe.jsx"
               state={{ scrollTo: "contact" }}
-              className="inline-flex items-center gap-2 bg-yellow-400 text-black px-5 py-2 rounded-md font-medium hover:bg-yellow-300 transition"
+              
             >
-              Hire Me <FiArrowUpRight />
-            </Link>
+             
+            </Link> */}
           </div>
           <div className="flex gap-5 mt-4 text-2xl text-yellow-400">
             <Link
