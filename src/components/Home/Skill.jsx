@@ -88,16 +88,15 @@ const Skills = () => {
             easy-to-understand code and using the latest tools to bring ideas to
             life.
           </p>
-          <div className="rounded-xl bg-gray-900 text-white p-6 shadow-inner transition-all duration-300">
+          <div className="hidden md:block rounded-xl bg-gray-900 text-white p-6 shadow-inner transition-all duration-300">
             <div className="relative flex flex-col md:flex-row items-start gap-6">
               <img
                 src={Image}
                 alt="skills"
                 className="hidden xl:block md:w-[250px] rounded-2xl"
               />
-
               {selectedSkill ? (
-                <div className="hidden md:flex flex-col justify-center items-center py-5 transform scale-105 transition duration-300">
+                <div className="flex flex-col justify-center items-center py-5 transform scale-105 transition duration-300">
                   <h2 className="text-3xl font-bold text-yellow-400 mb-2">
                     {selectedSkill.name}
                   </h2>
