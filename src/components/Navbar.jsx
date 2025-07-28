@@ -89,7 +89,7 @@ const Navbar = () => {
         <div className="flex items-center gap-4">
           <button
             onClick={handleLetsTalk}
-            className="inline-flex items-center gap-2 bg-yellow-400 text-black px-5 py-2 rounded-md font-medium hover:bg-yellow-300 transition"
+            className="inline-flex items-center gap-2 bg-yellow-400 text-black px-2 py-1 md:px-5 md:py-2 rounded-md font-medium hover:bg-yellow-300 transition"
           >
             Let's Talk <FiArrowRight />
           </button>
