@@ -50,9 +50,8 @@ const AboutService = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-yellow-400">
           My Services
         </h2>
-        <p className="text-gray-300 mt-4">
-          From design to deployment — I provide end-to-end solutions to build
-          your presence on the web.
+        <p className="mt-4 text-gray-300">
+          From design to deployment — I provide end-to-end solutions to build your presence on the web.
         </p>
       </div>
 

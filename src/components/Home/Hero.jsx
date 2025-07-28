@@ -24,7 +24,6 @@ const Hero = () => {
       className="w-full h-auto px-[7.5%] py-16 md:mt-[5rem] mt-[4rem] flex items-center"
     >
       <div className="grid md:grid-cols-2 gap-12 items-center rounded-l-2xl ">
-        {/* Left Side */}
         <div className="animate-fade-right md:animate-fade-up">
           <p className="text-2xl md:text-3xl font-bold text-gray-300">Hello</p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-white leading-tight mb-4">
@@ -41,7 +40,6 @@ const Hero = () => {
             latest frontend technologies like React.js, Tailwind CSS, and
             JavaScript. I turn ideas into interactive digital experiences.
           </p>
-
           <div className="flex flex-wrap gap-4 mb-6">
             <Link
               to="/"
@@ -50,7 +48,6 @@ const Hero = () => {
             >
               Hire Me <FiArrowUpRight />
             </Link>
-
             <Link
               to={Resume}
               target="_blank"
@@ -60,8 +57,6 @@ const Hero = () => {
               Download CV <FiArrowUpRight />
             </Link>
           </div>
-
-          {/* Social Icons */}
           <div className="flex gap-5 mt-4 text-2xl text-yellow-400">
             <Link
               to="https://www.linkedin.com/in/baljeet-singh-13590834b/"
@@ -100,8 +95,6 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-
-        {/* Right Side Image */}
         <div className="flex justify-center md:justify-end relative animate-fade-left md:animate-fade-up animate-delay-500">
           {/* <img
             src={myimg}

@@ -29,7 +29,7 @@ const Certification = () => {
             key={cert.id}
             className="bg-gray-900 p-6 rounded-xl inset-shadow-[0_5px_5px_#fff] hover:inset-shadow-[0_-5px_5px_#fbc618] transform hover:scale-105 transition-all duration-300"
           >
-            <h3 className="text-xl font-semibold text-yellow-400 mb-2">{cert.title}</h3>
+            <h3 className="text-xl md:text-2xl font-semibold text-yellow-400">{cert.title}</h3>
             <p className="text-gray-300">Issued by: <span className="text-white">{cert.issuer}</span></p>
             <p className="text-gray-400 mt-1">Year: {cert.year}</p>
           </div>

@@ -61,7 +61,7 @@ const FormContact = () => {
       <div className="flex flex-col md:flex-row gap-12 items-start">
         {/* Left Side */}
         <div className="md:w-1/2 space-y-6">
-          <h2 className="text-4xl text-yellow-400 font-bold">
+          <h2 className="text-3xl md:text-4xl font-bold text-yellow-400">
             Let's Work Together
           </h2>
 
@@ -127,7 +127,7 @@ const FormContact = () => {
 
         {/* Right Side Form */}
         <div className="md:w-1/2 w-full space-y-4">
-          <p className="text-gray-500">
+          <p className="text-gray-300">
             Ready to get started? Feel free to reach out through the contact
             form, and let's embark on a journey of innovation and success.
           </p>
