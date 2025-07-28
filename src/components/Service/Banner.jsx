@@ -12,34 +12,21 @@ import { FiArrowUpRight } from "react-icons/fi";
 const BannerService = () => {
   const navigate = useNavigate();
   return (
-    <section
-      id="services"
+    <section id="services"
       className="w-full h-full px-[7.5%] py-12 mt-[4rem] md:mt-[5rem]"
     >
       <div className="grid md:grid-cols-2 gap-12 items-center ">
-        <div className="text-justify">
-          <h1 className="text-4xl md:text-5xl font-bold text-yellow-400">
+        <div>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-yellow-400 mb-4">
             My Services
           </h1>
-          <p className="mt-4 text-gray-300 text-sm md:text-base max-w-2xl mx-auto">
+          <p className="text-gray-300 mb-6 text-justify">
             I offer modern web development services including custom UI
-            development, responsive website design, performance optimization,
-            and bug fixing. I can convert your Figma or Adobe XD designs into
-            live websites with clean, scalable code. Whether it’s a portfolio,
-            business site, or a web app, I deliver fast and user-friendly
+            development, responsive website design, performance optimization, and bug fixing. I can convert your Figma or Adobe XD designs into live websites with clean, scalable code. Whether it’s a portfolio, business site, or a web app, I deliver fast and user-friendly
             results.
           </p>
-
-          {/* Contact Button */}
           <div className="mt-8">
             <button onClick={() => navigate("/ContactMe")} className="inline-flex items-center gap-2 bg-yellow-400 text-black px-5 py-2 rounded-md font-medium hover:bg-yellow-300 transition"> Hire Me <FiArrowUpRight /></button>
-            {/* <Link
-              to="./ContactPage/ContactMe.jsx"
-              state={{ scrollTo: "contact" }}
-              
-            >
-             
-            </Link> */}
           </div>
           <div className="flex gap-5 mt-4 text-2xl text-yellow-400">
             <Link

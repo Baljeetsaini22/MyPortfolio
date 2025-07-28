@@ -67,7 +67,7 @@ const Projects = () => {
               className="w-full h-48 object-cover opacity-75 hover:opacity-100"
             />
             <div className="p-4">
-              <h3 className="text-lg font-semibold text-yellow-400">
+              <h3 className="text-xl md:text-2xl font-semibold text-yellow-400">
                 {project.title}
               </h3>
             </div>

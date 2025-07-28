@@ -36,8 +36,6 @@ const Education = () => {
           My academic background and qualifications
         </p>
       </div>
-
-      {/* Timeline Line (hidden on mobile, soft in background) */}
       <div className="relative z-10">
         <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-10 h-full bg-yellow-400 -z-1"></div>
         {educationData.map((edu) => (

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import myimg from "/assets/image/image.png";
 import {
   FaFacebook,
@@ -10,24 +10,33 @@ import {
 import { FiArrowUpRight } from "react-icons/fi";
 
 const ContactBanner = () => {
-
+  const navigate = useNavigate();
   return (
     <section
       id="banner"
       className="w-full h-full px-[7.5%] py-12 mt-[4rem] md:mt-[5rem]"
     >
       <div className="grid md:grid-cols-2 gap-12 items-center ">
-        <div className="text-justify mb-10">
-          <h1 className="text-4xl font-bold text-yellow-400 mb-2">
+        <div>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-yellow-400 mb-4">
             Contact Me
           </h1>
-          <p className="text-gray-300 max-w-xl">
+          <p className="text-gray-300 mb-6 text-justify">
             I'm always open to new ideas, collaborations, or freelance work.
             Whether you want to build a website, redesign an interface, or just
             discuss tech — feel free to reach out. I respond quickly via email
             and enjoy working with clients who value clean design and smart
             code. Let’s connect and bring your ideas to life.
           </p>
+          <div className="mt-8">
+            <button
+              onClick={() => navigate("/Services")}
+              className="inline-flex items-center gap-2 bg-yellow-400 text-black px-5 py-2 rounded-md font-medium hover:bg-yellow-300 transition"
+            >
+              {" "}
+              My Services <FiArrowUpRight />
+            </button>
+          </div>
           <div className="flex gap-5 mt-4 text-2xl text-yellow-400">
             <Link
               to="https://www.linkedin.com/in/baljeet-singh-13590834b/"
