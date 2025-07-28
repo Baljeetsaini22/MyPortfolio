@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "/assets/logo/logo.png";
+import { FiArrowRight } from "react-icons/fi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -88,9 +89,9 @@ const Navbar = () => {
         <div className="flex items-center gap-4">
           <button
             onClick={handleLetsTalk}
-            className="bg-yellow-400 text-black px-2 md:px-4 py-1 md:py-2 rounded-md font-semibold hover:bg-yellow-300 transition"
+            className="inline-flex items-center gap-2 bg-yellow-400 text-black px-5 py-2 rounded-md font-medium hover:bg-yellow-300 transition"
           >
-            Let's Talk
+            Let's Talk <FiArrowRight />
           </button>
           <button
             onClick={toggleMenu}
