@@ -178,7 +178,7 @@ const FormContact = () => {
               ></textarea>
               <button
                 type="submit"
-                className="bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-300"
+                className="cursor-pointer bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-300"
               >
                 Send Message
               </button>

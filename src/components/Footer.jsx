@@ -20,7 +20,7 @@ const Footer = () => {
       {showTopBtn && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-5 right-5 bg-yellow-400 hover:bg-yellow-300 text-black p-3 rounded-full shadow-lg z-50 transition-all animate-bounce"
+          className="cursor-pointer fixed bottom-5 right-5 bg-yellow-400 hover:bg-yellow-300 text-black p-3 rounded-full shadow-lg z-50 transition-all animate-bounce"
           aria-label="Scroll to Top"
         >
           <FaArrowUp size={20} />
@@ -115,7 +115,7 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="bg-yellow-400 text-black px-2 md:px-4 py-1 md:py-2 rounded-md font-semibold hover:bg-yellow-300 transition"
+              className="cursor-pointer bg-yellow-400 text-black px-2 md:px-4 py-1 md:py-2 rounded-md font-semibold hover:bg-yellow-300 transition"
             >
               Subscribe
             </button>

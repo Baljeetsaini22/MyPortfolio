@@ -31,7 +31,7 @@ const ContactBanner = () => {
           <div className="mt-8">
             <button
               onClick={() => navigate("/Services")}
-              className="inline-flex items-center gap-2 bg-yellow-400 text-black px-2 md:px-5 py-1 md:py-2 rounded-md font-medium hover:bg-yellow-300 transition"
+              className="cursor-pointer inline-flex items-center gap-2 bg-yellow-400 text-black px-2 md:px-5 py-1 md:py-2 rounded-md font-medium hover:bg-yellow-300 transition"
             >
               {" "}
               My Services <FiArrowUpRight />
