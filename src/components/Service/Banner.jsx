@@ -24,7 +24,7 @@ const BannerService = () => {
             I offer modern web development services including custom UI development, responsive website design, performance optimization, and bug fixing. I can convert your Figma or Adobe XD designs into live websites with clean, scalable code. Whether it’s a portfolio, business site, or a web app, I deliver fast and user-friendly results.
           </p>
           <div className="mt-8">
-            <button onClick={() => navigate("/ContactMe")} className="inline-flex items-center gap-2 bg-yellow-400 text-black px-2 md:px-5 py-1 md:py-2 rounded-md font-medium hover:bg-yellow-300 transition"> Hire Me <FiArrowUpRight /></button>
+            <button onClick={() => navigate("/ContactMe")} className="cursor-pointer inline-flex items-center gap-2 bg-yellow-400 text-black px-2 md:px-5 py-1 md:py-2 rounded-md font-medium hover:bg-yellow-300 transition"> Hire Me <FiArrowUpRight /></button>
           </div>
           <div className="flex gap-5 mt-4 text-2xl text-yellow-400">
             <Link
