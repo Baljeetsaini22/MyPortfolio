@@ -7,6 +7,8 @@ import Contact from "./Contact";
 import Education from "./Education";
 import Projects from "./Project";
 import Skills from "./Skill";
+import GithubStats from "./GithubStats";
+import Experience from "./Experience";
 
 const Home = () => {
   const location = useLocation();
@@ -24,10 +26,12 @@ const Home = () => {
     <div className="bg-black text-white">
       <Hero />
       <About />
+      <Experience />
       <Skills />
+      <Projects />
+      <GithubStats />
       <Education />
       <Certification />
-      <Projects />
       <Contact />
     </div>
   );

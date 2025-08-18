@@ -27,7 +27,7 @@ const experiences = [
 const Experience = () => {
   return (
     <section className=" w-full px-[7.5%] py-16">
-      <div className="max-w-6xl mx-auto">
+      <div className="text-center">
         <h2 className="text-4xl font-bold text-center mb-16">
           Working Experience
         </h2>
@@ -43,17 +43,17 @@ const Experience = () => {
               }`}
             >
               {/* Content Box */}
-                <div
-                  className={`md:w-[45%] bg-gray-900800 transition-all duration-300 rounded-xl hover:scale-105 shadow-[0_1px_1px_2px_#fdc700,0_-1px_1px_2px_#fff] hover:shadow-[0_-1px_1px_2px_#fdc700,0_1px_1px_2px_#fff] border p-6 ${
-                    index % 2 == 0 ? "md:mr-auto md:ml-0" : "md:ml-auto md:mr-0"
-                  }`}
-                >
-                  <h3 className="text-xl text-yellow-400 font-semibold">
-                    {exp.title}
-                  </h3>
-                  <p className="text-gray-500 italic">{exp.company}</p>
-                  <p className="text-gray-700 mt-2">{exp.description}</p>
-                </div>
+              <div
+                className={`md:w-[45%] bg-gray-900800 transition-all duration-300 rounded-xl hover:scale-105 shadow-[0_1px_1px_2px_#fdc700,0_-1px_1px_2px_#fff] hover:shadow-[0_-1px_1px_2px_#fdc700,0_1px_1px_2px_#fff] border p-6 ${
+                  index % 2 == 0 ? "md:mr-auto md:ml-0" : "md:ml-auto md:mr-0"
+                }`}
+              >
+                <h3 className="text-xl text-yellow-400 font-semibold">
+                  {exp.title}
+                </h3>
+                <p className="text-gray-500 italic">{exp.company}</p>
+                <p className="text-gray-700 mt-2">{exp.description}</p>
+              </div>
 
               {/* Circle & Date */}
               <div className="">
