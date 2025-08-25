@@ -99,6 +99,7 @@ const Footer = () => {
             <li>UI Design</li>
             <li>Responsive Layout</li>
             <li>React Projects</li>
+            <li>Portfolio</li>
           </ul>
         </div>
 

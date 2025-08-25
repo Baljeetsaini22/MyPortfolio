@@ -62,6 +62,7 @@
 // export default Experience;
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp, ArrowUpRight } from "lucide-react";
+import logo from "/assets/logo/expLogo/digibeez.svg";
 
 const Experience = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -105,7 +106,7 @@ const Experience = () => {
                 {/* Inline Header */}
                 <div
                   onClick={() => setOpenIndex(isOpen ? null : index)}
-                  className="flex items-center justify-between px-6 py-4 gap-x-4 text-white text-lg  cursor-pointer"
+                  className="flex items-center justify-between max-md:flex-col px-6 py-4 gap-x-4 text-white text-lg  cursor-pointer"
                 >
                   {/* <div className="flex flex-wrap items-center gap-x-4 text-white text-lg"> */}
                   <span className="text-yellow-400 font-semibold">
@@ -117,21 +118,31 @@ const Experience = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={(e) => e.stopPropagation()} // stop toggle when arrow clicked
-                    className="flex items-center gap-1 text-yellow-400 hover:text-white"
+                    className="flex items-center gap-1"
                   >
-                    {exp.company}
+                    <img
+                      src={logo}
+                      alt={exp.company}
+                      loading="lazy"
+                      className="w-[100px]"
+                    />
+
                     <ArrowUpRight size={18} />
                   </a>
                   <span className="text-gray-500">·</span>
-                  <span className="text-gray-400 text-sm">{exp.duration}</span>
-                  {/* </div> */}
+                  <div className="flex items-center gap-5">
+                    <span className="text-gray-400 text-sm">
+                      {exp.duration}
+                    </span>
+                    {/* </div> */}
 
-                  <div className="text-yellow-400">
-                    {isOpen ? (
-                      <ChevronUp size={22} />
-                    ) : (
-                      <ChevronDown size={22} />
-                    )}
+                    <div className="text-yellow-400">
+                      {isOpen ? (
+                        <ChevronUp size={22} />
+                      ) : (
+                        <ChevronDown size={22} />
+                      )}
+                    </div>
                   </div>
                 </div>
 
